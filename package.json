@@ -1,0 +1,27 @@
+{
+  "name": "skil-7",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync start --server --files scripts.js index.html",
+    "copy:html": "cpy ./*.html ./build/",
+    "copy:js": "cpy ./*.js ./build/",
+    "build": "concurrently npm:copy:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Logi-WA/Skil-7.git"
+  },
+  "author": "Logi Wedholm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Logi-WA/Skil-7/issues"
+  },
+  "homepage": "https://github.com/Logi-WA/Skil-7#readme",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "concurrently": "^8.2.2",
+    "cpy-cli": "^5.0.0"
+  }
+}
